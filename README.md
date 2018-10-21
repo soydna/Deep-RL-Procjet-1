@@ -18,10 +18,10 @@ The task is episodic, and in order to solve the environment, your agent must get
 I solved this project in the Udacity Workspace. The dependencies are give [Here](https://github.com/udacity/deep-reinforcement-learning#dependencies)
 
 # Train The Agent
-Run parts 1. and 2. to intialize the environment. Skip part 3. Run part 4. to train the agent.
-This line in the training cell chooses configuration:
-agent = Agent(state_size=state_size, action_size=action_size, seed=0, double = True, duelling=True)
-double = True enables Double DQN
-duelling = True enables Duelling DQN
-
+Run parts 1. and 2. to intialize the environment. Skip part 3. Run part 4. to train the agent. <br>
+This line in the training cell chooses configuration:<br>
+agent = Agent(state_size=state_size, action_size=action_size, seed=0, double = True, duelling=True)<br>
+double = True enables Double DQN<br>
+duelling = True enables Duelling DQN<br>
+<br>
 The last network evaluates the performance over 10 iterations
