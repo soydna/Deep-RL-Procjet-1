@@ -2,25 +2,29 @@
 
 Implmented a vanilla DQN and benchmarked against Double DQN, Duelling DQN and both Double and Douelling DQN. The benchmark was the number of episodes to reach a moving avreage of at least 15.0 over 100 episodes.
 
-The network is a three layer fully connected layers (200, 100 and 50) with RELU activations. When using duelling two additinonal fully connected layers are added for the Value and Advantage values. The non duelling verions instead has an output layer.
-
 [DQN](https://arxiv.org/abs/1312.5602) <br>
 [Double DQN](https://arxiv.org/abs/1509.06461) <br>
 [Duelling DQN](https://arxiv.org/abs/1511.06581) <br>
+
+
+## Architecture
+The network is a three layer fully connected layers (200, 100 and 50) with RELU activations. When using duelling two additinonal fully connected layers are added for the Value and Advantage values. The non duelling verions instead has an output layer.
+
+
+## Hyperparameters
+BUFFER_SIZE = int(1e5)  # replay buffer size <br>
+BATCH_SIZE = 64         # minibatch size <br>
+GAMMA = 0.99            # discount factor <br>
+TAU = 1e-3              # for soft update of target parameters <br>
+LR = 5e-4               # learning rate  <br>
+UPDATE_EVERY = 4        # how often to update the network <br>
+
 
 ## Episodes to reach target of 15.0
 **Vanilla DQN:** 697 episodes <br>
 **Double DQN:** 602 episodes  <br> 
 **Duelling DQN:** 499 episodes  <br>
 **Duelling and Double DQN:** 537 episodes  <br>
-
-## Hyperparameters
-BUFFER_SIZE = int(1e5)  # replay buffer size
-BATCH_SIZE = 64         # minibatch size
-GAMMA = 0.99            # discount factor
-TAU = 1e-3              # for soft update of target parameters
-LR = 5e-4               # learning rate 
-UPDATE_EVERY = 4        # how often to update the network
 
 
 ## Discussion
