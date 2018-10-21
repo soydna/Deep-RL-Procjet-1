@@ -19,6 +19,7 @@ I solved this project in the Udacity Workspace. The dependencies are give [Here]
 
 # Train The Agent
 Run parts 1. and 2. to intialize the environment. Skip part 3. Run part 4. to train the agent. <br>
+<br>
 This line in the training cell chooses configuration:<br>
 agent = Agent(state_size=state_size, action_size=action_size, seed=0, double = True, duelling=True)<br>
 double = True enables Double DQN<br>
